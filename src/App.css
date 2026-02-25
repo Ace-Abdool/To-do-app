@@ -1,38 +1,92 @@
+body {
+    background-color: rgb(45, 45, 80);
+}
 .App {
-  text-align: center;
+    width: 400px;
+    height: 500px;
+    background-color: whitesmoke;
+    margin: 80px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+    border-bottom: 1px solid lightblue;
+    background-color: #033e8bde;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head-tag h2 {
+    margin: 0;
+    text-align: center;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task-head {
+    padding: 20px;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.task-input, .task-head button {
+    padding: 10px;
+    border: 1px solid #033e8bde;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-input {
+    border-right: none;
+    background-color: #fffffff1;
+
+}
+
+.task-head button {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    background-color: #033e8bde;
+    color: white;
+}
+
+.task-section h2 {
+    text-align: center;
+    color: #033e8bde;
+}
+
+.tasks {
+    margin: 1em 2em;
+    height: 16em;
+    overflow-y: auto;
+    border-bottom: 1px solid #033e8bde;
+}
+
+.tasks p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #033e8bde;
+    font-weight: 600;
+}
+
+.tasks p > button {
+    margin-left: auto;
+    cursor: pointer;
+    background-color: #033e8bde;
+    border: 1px solid #fffffff1;
+    border-radius: 6px;
+    padding: 12px;
+    color: white;
+}
+
+.toggle-on {
+    visibility: hidden;
+}
+
+.toggle-off {
+    visibility: visible;
+}
+
+.n-a {
+    text-align: center;
+    margin-top: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.2;
+    color: #033e8bde;
 }
